@@ -31,6 +31,9 @@ class NavigationManager {
         this.pageManager.loadPage(page);
         this.updateFooterActiveStates(page);
         
+        // Scroll to top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
         // Handle page-specific navigation setup
         if (page === 'menu') {
             this.setupMenuNavigation();
