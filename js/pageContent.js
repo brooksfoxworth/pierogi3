@@ -166,8 +166,8 @@ const PageContent = {
                             <button class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-10 py-4 rounded-xl font-bold btn-animated hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg" onclick="window.location.hash='menu'">
                                 Browse Menu
                             </button>
-                            <button class="bg-transparent border-2 border-yellow-400 text-yellow-400 px-10 py-4 rounded-xl font-bold hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 text-lg" onclick="window.location.hash='contact'">
-                                Call (555) 123-PIEROGI
+                            <button class="bg-transparent border-2 border-yellow-400 text-yellow-400 px-10 py-4 rounded-xl font-bold hover:bg-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105 text-lg" onclick="window.location.href='tel:8438399040'">
+                                Call (843) 839-9040
                             </button>
                         </div>
                     </div>
@@ -298,27 +298,7 @@ const PageContent = {
                     </div>
                 </div>
 
-                <!-- Fun Facts -->
-                <div class="bg-white rounded-xl shadow-lg p-8">
-                    <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6 text-center">Fun Facts About Us</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="text-center p-4 bg-gradient-to-b from-yellow-50 to-orange-50 rounded-lg">
-                            <div class="text-3xl mb-2 text-[var(--primary-color)] font-bold">•</div>
-                            <div class="text-2xl font-bold text-[var(--primary-color)] mb-1">500+</div>
-                            <p class="text-[var(--text-medium)] text-sm">Pierogis made fresh daily</p>
-                        </div>
-                        <div class="text-center p-4 bg-gradient-to-b from-blue-50 to-cyan-50 rounded-lg">
-                            <div class="text-3xl mb-2 text-blue-500 font-bold">•</div>
-                            <div class="text-2xl font-bold text-[var(--primary-color)] mb-1">12</div>
-                            <p class="text-[var(--text-medium)] text-sm">Traditional family recipes</p>
-                        </div>
-                        <div class="text-center p-4 bg-gradient-to-b from-green-50 to-emerald-50 rounded-lg">
-                            <div class="text-3xl mb-2 text-green-500 font-bold">•</div>
-                            <div class="text-2xl font-bold text-[var(--primary-color)] mb-1">100%</div>
-                            <p class="text-[var(--text-medium)] text-sm">Handmade from scratch</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     `,
@@ -336,15 +316,15 @@ const PageContent = {
                     <div class="space-y-3">
                         <div class="flex items-center space-x-3">
                             <span class="text-[var(--primary-color)] font-semibold">Phone:</span>
-                            <span class="text-[var(--text-medium)]">(555) 123-PIEROGI</span>
+                            <a href="tel:8438399040" class="text-[var(--text-medium)] hover:text-[var(--primary-color)] transition-colors">(843) 839-9040</a>
                         </div>
                         <div class="flex items-center space-x-3">
                             <span class="text-[var(--primary-color)] font-semibold">Email:</span>
                             <span class="text-[var(--text-medium)]">info@pierogihouse.com</span>
                         </div>
-                        <div class="flex items-center space-x-3">
+                        <div class="flex items-start space-x-3">
                             <span class="text-[var(--primary-color)] font-semibold">Address:</span>
-                            <span class="text-[var(--text-medium)]">123 Polish Street, Foodie City, FC 12345</span>
+                            <a href="https://www.google.com/maps/place/1390+Farrow+Pkwy+Unit+1,+Myrtle+Beach,+SC+29577" target="_blank" rel="noopener noreferrer" class="text-[var(--text-medium)] hover:text-[var(--primary-color)] transition-colors">1390 Farrow Pkwy Unit 1,<br>Myrtle Beach, SC 29577</a>
                         </div>
                     </div>
                 </div>
@@ -353,16 +333,12 @@ const PageContent = {
                     <h2 class="text-xl font-bold text-[var(--text-dark)] mb-4">Hours</h2>
                     <div class="space-y-2">
                         <div class="flex justify-between">
-                            <span class="text-[var(--text-medium)]">Monday - Thursday:</span>
+                            <span class="text-[var(--text-medium)]">Tuesday - Sunday:</span>
                             <span class="text-[var(--text-dark)] font-medium">11:00 AM - 9:00 PM</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="text-[var(--text-medium)]">Friday - Saturday:</span>
-                            <span class="text-[var(--text-dark)] font-medium">11:00 AM - 10:00 PM</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-[var(--text-medium)]">Sunday:</span>
-                            <span class="text-[var(--text-dark)] font-medium">12:00 PM - 8:00 PM</span>
+                            <span class="text-[var(--text-medium)]">Monday:</span>
+                            <span class="text-[var(--text-dark)] font-medium">Closed</span>
                         </div>
                     </div>
                 </div>
